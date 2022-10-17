@@ -1,0 +1,646 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgba(3, 3, 31, 0.925);
+}
+
+ /******************************** NAV BAR *********************************/
+       
+       /* Left Side */
+       .left_side{ 
+        display: flex;
+    }
+    .left_side #image{
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-left: 8px;
+        margin-top: 3px;
+    }
+    .left_side h4{
+        color: white;
+        margin-left: 8px;
+        margin-top: 12px;
+        font-family: cursive;
+    }
+    .left_side p{
+        color: white;
+        margin-top: 20px;
+        margin-left: 90px;
+        font-weight: 500;
+        font-size: 13px;
+    font-family: cursive;
+    }
+     
+    /* Right Side */
+
+#right_side{
+    display: inline-block;
+}
+.Search_bar{
+    margin: -3px;
+    margin-left: 900px;
+    display: flex;
+    
+}
+.Search_bar .search_icon{
+    color: white;
+    font-size: 15px;
+    margin-top:-32px;
+    margin-right: -26px;
+    position: relative;
+    
+    /* padding: 5px 3px 5px 0px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px; */
+}
+.Search_bar input{
+    font-size: 17px;
+    border-radius: 20px;
+    background-color:#04046099;
+    padding: 7px 34px;
+    height: 34px;
+    width: 257px;
+    align-items: center;
+    margin-top: -41px;
+    color: white;
+}
+
+.Search_bar .voice_search_icon{
+    font-size: 18px;
+    height: 10px;
+    width: 10px;
+    color: lightgrey;
+    background-color:transparent;
+    padding: 5px;
+    margin-left: -28px;
+    margin-top: -38px;
+    position: relative;
+}
+
+#right_side .notification_bell{
+    color: white;
+    margin-left: 1168px;
+    margin-top: -31px;
+    font-size: 23px;
+}
+#right_side #notification{
+    background-color: #f90606;
+    height: 10px;
+    width: 10px;
+    margin-left: 1179px;
+    border-radius: 10px;
+    margin-top: -28px;
+    position: relative;
+}
+#right_side .img_icon{
+    height: 64px;
+    width: 64px;
+    border-radius: 44px;
+    margin-left: 1235px;
+    margin-top: -35px;
+}
+
+/******************** CSS for similar artist, Playlist in aside section of Single-Artist.html ***********************/
+.playlist, .similar{
+    font-family: 'Comfortaa', cursive;
+  }
+  .playlist::-webkit-scrollbar {
+    width: 0px;    
+  }
+  .similar::-webkit-scrollbar {
+    width: 0px;    
+  }
+  
+  .playlist{
+    background: linear-gradient(to bottom,#000000 1%,#031c27 100%);
+    color: white;
+    position: fixed;
+    right:10px;
+    left: 1020px;
+    top: 350px;
+    bottom:0px;
+    overflow: auto;
+  }
+  .playlist h1{
+    margin-bottom: 20px;
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  .playlist h1,h4{
+    display: inline-block;
+    
+    
+  }
+  .playlist h4{
+    margin-left: 27%;
+    color: rgb(9, 58, 122);
+    font-size: 13px;
+  }
+  
+  .playlist h4:hover{
+    color:rgb(172, 32, 8);
+    font-size: 12px;
+    cursor: pointer;
+  }
+  .playlist i{
+    color: rgb(59, 53, 53);
+  }
+  .song-container{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      border-radius: 5px;
+      transition: .2s;
+  }
+  .song-container:hover{
+    background-color: #01070D;
+    cursor: pointer;
+    color:rgb(172, 32, 8);
+  }
+  .song-container img{
+    margin: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 17px 2px#242020;
+  }
+  .song-container .index{
+    font-size: 13px;
+    color: grey;
+    padding-left: 10px;
+  }
+  .song-container i{
+    margin-right: 5%;
+  }
+  .song-info{
+    margin-left: 10px;
+    width: 210px;
+  }
+  .song-info p:nth-child(1){
+    font-family: 'Comfortaa', cursive;
+    font-size: 13px;
+  }
+  .song-info p:nth-child(2){
+    font-size: 13px;
+    padding-top: 5px;
+    color: grey;
+  }
+   
+  .songs #kk_playlist{
+    position: absolute;
+    margin-left: -48px;
+    color: red;
+    margin-top: -2px;
+  }
+
+  
+  /***************************** css for similar Artists *************************************/
+  .similar{
+    color: white;
+    position: fixed;
+    right:10px;
+    left: 1020px;
+    top:100px;
+    bottom:53%;
+    overflow: auto;
+  }
+  .similar h1{
+    margin-left: 12px;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  .similar h1,h4{
+    display: inline-block;
+  }
+  .similar h4{
+    margin-left: 30%;
+    /* margin-right: 10px; */
+    color: rgb(9, 58, 122);
+    font-size: 13px;
+  }
+  .similar h4:hover{
+    color:rgb(172, 32, 8);
+    font-size: 12px;
+    cursor: pointer;
+  }
+
+
+  /******** Google Font Nunito ********/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+
+
+
+/*********************** Main Layout ***************************/
+.layout {
+    position: relative;
+  height: 1600px;
+  width: 950px;
+  margin-left: 50px;
+  padding-top: 100px;
+  color: white;
+
+}
+
+.artist-page {
+  background: linear-gradient(to bottom right, #0C1027, #000);
+  height: 390px;
+}
+
+.artist-page img {
+  width: 250px;
+  height: 200px;
+  border-radius: 4px;
+
+}
+
+.artist-details {
+  display: flex;
+  flex-direction: row;
+  font-family: 'Nunito', sans-serif;
+  display: inline-block;
+  vertical-align: top;
+  width: 70%;
+}
+
+.singer-name {
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 40%;
+  display: inline-block;
+
+
+}
+
+.followers {
+  font-size: 12px;
+  color: grey;
+}
+
+.singer-desc {
+  width: 70%;
+  margin-left: 275px;
+  color: rgb(228, 229, 235);
+  font-size: 15px;
+  letter-spacing: .5px;
+  line-height: 23px;
+  text-align: left;
+  margin-top: -137px;
+  vertical-align: top;
+  margin-bottom: 48px;
+
+}
+
+.artist-page button {
+  margin-left: 300px;
+  vertical-align: middle;
+  padding: 10px 15px;
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  border-radius: 3px;
+  border-style: none;
+  cursor: pointer;
+  ;
+  transition: .15s;
+  background: linear-gradient(to right, #3524AF, #B845DB);
+
+}
+
+.artist-page button:hover {
+  color: white;
+}
+
+.artist-page .follow {
+  margin-left: 50px;
+  border: 1px solid black;
+
+}
+
+.artist-page .follow:hover {
+  color: #C51230;
+  cursor: pointer;
+
+}
+
+.tracks {
+  margin-left: 32%;
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+
+
+/***************************** css for songs container ***********************************/
+.songs-container {
+  padding-top: 30px;
+}
+
+.songs {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  background-color:rgba(174, 231, 16, 0.205);
+}
+
+.songs:hover {
+  background-color: #0a121a;
+  transition: .3s linear;
+}
+
+.songs .index {
+  padding: 10px;
+  font-size: 14px;
+}
+
+.songs img {
+  width: 80px;
+  height: 60px;
+}
+
+.songs .name {
+  margin-left: 2%;
+  width: 40%;
+  font-size: 16px;
+}
+
+.songs .artist {
+  margin-left: 10%;
+  font-size: 15px;
+
+  width: 20%;
+}
+
+.songs i {
+  margin-left: 3%;
+}
+
+/**********************************  Master Play  ***************************************/
+
+.master_play{
+  height: 60px;
+  width: 85vw;
+  position: fixed;
+  bottom: 1px;
+  border-radius: 90px;
+  left: 80px;
+  border: none;
+  color: white;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+}
+.master_play .wave{
+    width: 30px;
+    height: 30px;
+    /* border: 1px solid white; */
+    padding-bottom: 5px;
+    display: flex;
+    align-items: flex-end;
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+
+.master_play .wave .wave1{
+    width: 3px;
+    height: 10px;
+    background: cyan;
+    margin-right:3px;
+    border-radius: 10px 10px 0px 0px;
+    animation: wave 0.5s linear infinite;
+}
+
+.master_play .wave .wave1:nth-child(2){
+    height: 13px;
+    margin-right: 3.5px;
+    animation-delay: 0.4s;
+}
+.master_play .wave .wave1:nth-child(3){
+    height: 8px;
+    animation-delay: 0.8s;
+}
+
+@keyframes wave {
+    0%{
+        height: 10px;
+    }
+    50%{
+        height: 15px;
+    }
+    100%{
+        height: 10px;
+    }
+}
+
+.master_play img{
+    height: 33px;
+    width: 33px;
+}
+  
+.master_play h5{
+    width: 100px;
+    /* border: 1px solid white; */
+    margin-left: 15px;
+    line-height: 17px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+.master_play h5 .subtitle{
+    font-size: 11px;
+    width: 100%;
+    color: #4c5262;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.master_play .icon{
+    font-size: 17px;
+    margin: -1px 20px 0px 74px;
+    outline: none;
+    cursor: pointer;
+    
+}
+
+.master_play .icon i{
+    margin-right: 10px;
+}
+
+.master_play span{
+    width: 32px;
+    font-weight: 400;
+    /* border: 1px solid white; */
+    font-size: 13px;
+    margin-top: -3px;
+    margin-left: 0px;
+}
+
+.master_play span #current_time{
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.master_play .bar{
+    position: relative;
+    width: 43%;
+    height: 2px;
+}
+.master_play .bar #seek{
+    margin-top: -7px;
+}
+
+.master_play .bar .bar2{
+    position: absolute;
+    background: #36e2ec;
+    width: 50%;
+    height: 100%;
+    top: -1;
+    transition: 1s linear;
+}
+
+.master_play .bar .dot{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    position: absolute;
+    background: #36e2ec;
+    left: 0;
+    top: -3px;
+    transition: 1s linear;
+}
+
+.master_play .bar .dot::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #36e2ec;
+    left: -6px;
+    top: -6.5px;
+    box-shadow: inset 0px 0px 5px #36e2ec;
+}
+
+.master_play .bar input{
+    position: absolute;
+    width: 100%;
+    top: -1.3px;
+    left: 0;
+    cursor: pointer;
+    z-index: 999999999999999999999999999999999999999999999999;
+    opacity: 0;
+}
+
+.master_play #current_end{
+    margin-left: -158px;
+ }
+
+.master_play .vol{
+    position: relative;
+    width: 100px;
+    height: 2px;
+    background: grey;
+    margin-left: 40px;
+}
+
+.master_play .vol #vol_icon{
+    position: absolute;
+    color: white;
+    font-size: 16px;
+    top: -8px;
+    left: -30px;
+
+}
+
+.master_play .vol input{
+    position: absolute;
+    top: -7px;
+    width: 100%;
+    left: 0;
+    cursor: pointer;
+    z-index: 99999999999999999999;
+    opacity: 0;
+
+}
+
+.master_play .vol .vol_bar{
+    position: absolute;
+    background: #36e2ec;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    transition: 1s linear;
+
+}
+
+.master_play .vol .dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    position: absolute;
+    background: #36e2ec;
+    left: 0;
+    top: -2px;
+    transition: 1s linear;
+}
+
+.master_play .vol .dot::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #36e2ec;
+    left: -6px;
+    top: -6.5px;
+    box-shadow: inset 0px 0px 5px #36e2ec;
+}
+
+.master_play .vol #download{
+    position: absolute;
+    color: white;
+    font-size: 16px;
+    /* border: 1px solid white; */
+    top: -8px;
+    left: 130px;
+    
+    /* height: 25px;
+    width: 25px; */
+    cursor: pointer;
+}
+
+.master_play .vol #mute{
+    position: absolute;
+    font-size: 16px;
+    color: white;
+    /* border: 1px solid white; */
+    margin-left: 160px;
+    margin-top: -8px;
+    cursor: pointer;
+}
+
+.master_play .vol #headphone{
+    position: absolute;
+    font-size: 16px;
+    color: white;
+    /* border: 1px solid white; */
+    margin-left: 190px;
+    margin-top: -8px;
+    cursor: pointer;
+}
